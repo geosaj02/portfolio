@@ -19,8 +19,8 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex justify-center items-center relative top-3">
-      <nav className="flex p-1 gap-1 border border-white/15 rounded-full bg-white/10 backdrop-blur">
+    <div className="flex justify-center items-center sticky top-4 z-50">
+      <nav className="hidden md:flex p-1 gap-1 border border-white/15 rounded-full bg-white/10 backdrop-blur">
         {navLinks.map((link, index) => (
           <Link
             key={index}
